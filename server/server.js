@@ -7,7 +7,7 @@ const db = require('./db');
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('public')); // used:no need to add path when adding static files
 
 const routes = require('./routes');
 app.use(routes);
